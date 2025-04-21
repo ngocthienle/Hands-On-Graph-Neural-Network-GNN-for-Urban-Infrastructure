@@ -1,53 +1,60 @@
-# Hands-On Graph Neural Netowrk (GNN) for Urban Infrastructure
- This is a hands-one tutorial for students to start learning about Graph Neural Network (GNN) and utlizling the GNN for networks in Urban Infrastructure.
+# GNN for Urban Infrastructure Analysis: Full Learning Series
 
+Welcome to the Graph Neural Networks (GNNs) for Urban Infrastructure Analysis series. This learning suite is designed to help urban planners, data scientists, and researchers apply GNNs to critical infrastructure domains including roads, water systems, smart buildings, and urban environmental monitoring.
 
-## Module 0: Introduction to Graph Neural Networks and Training Workflow
-### 1. Objective:
-Provide learners with a hands‑on introduction to building a simple Graph Neural Network (GNN) in PyTorch Geometric, covering graph creation, model construction, training loop, evaluation metrics, and plotting training/evaluation curves.
+## 🎯 Learning Goals
+1. Understand GNN foundations and spatial graph construction
+2. Apply GNNs to road, water, disaster, energy, and sensor networks
+3. Evaluate infrastructure performance, forecasting, and resilience
+4. Build practical, Jupyter-based GNN workflows for academic or city-level analysis
 
-### 2. Key concepts
-- Graph basics: nodes, edges, features, adjacency
-- PyTorch Geometric Data object: attributes x, edge_index, y
-- Model architecture: simple two-layer GCN
-- Training loop: forward pass, loss computation, backward pass, optimizer step
-- Evaluation: MAE, RMSE, accuracy (for classification)
-- Visualization: plot loss curve, metric curves, example predictions vs. ground truth
+## 📚 Module Index
+ Module      | Title       | Description|
+| ----------- | ----------- |------------|
+| 01    | GNN for Urban Road Network Analysis  |Build and analyze road graphs to predict congestion and connectivity
+|02|GNN for Urban Water Supply Systems|Model hydraulic flow and pressure anomalies in water systems
+|03|GNN for Wastewater Networks|Detect blockages and flow issues in drainage systems
+|04|Building and Training a GNN|Learn how to construct, train, and evaluate GNNs
+|05|Visualizing GNN Training and Evaluation|Plot loss curves, accuracy, feature importance
+|06|Spatiotemporal Traffic Forecasting|Predict traffic patterns using dynamic GNNs
+|07|Smart Parking Prediction|Forecast parking availability using GNNs
+|08|Smart Building Energy Optimization|Model HVAC loads and energy flows
+|09|Disaster Response and Routing|Model network vulnerability and optimize emergency routes
+|10|Environmental Monitoring|Forecast air/noise pollution via GNNs on sensor networks
 
-## Module 1: Urban Road Network Analysis with GNNs
-### 1. Topic Content
-**Objective**: Learn to model an urban road network as a graph and apply GNNs for traffic‑flow prediction and anomaly detection.
-### 2. Key Concepts:
-- Graph representation (nodes = intersections, edges = road segments)
-- Spatial features (road length, speed limit, connectivity)
-- Time‑series node features (historical traffic volume/speed)
-- GNN architectures: GCN, Graph Attention Networks (GAT)
-### 3. Use Cases:
-- Short‑term traffic forecasting
-- Detecting congestion anomalies
-- Evaluating network resilience under link failures
+## 🛠 Installation & Requirements
 
-## Module 2: Urban Water‑Supply Network Modeling with GNNs
-### 1. Topic Content
-**Objective**: Represent a water distribution network as a graph to predict pressure/flow and detect leaks.
-### 2. Key Concepts:
-- Graph (nodes = junctions, reservoirs; edges = pipes)
-- Hydraulic features (pipe diameter, length, roughness)
-- Sensor data (pressure, flow rates, valve statuses)
-- GNN tasks: regression (pressure forecasting), classification (leak detection)
-### 3. Use Cases:
-- Forecasting low‑pressure events
-- Early leak detection
-- Network segmentation for maintenance
+### Clone repository
+```bash
+https://github.com/your-org/gnn-urban-infra-series.git
+cd gnn-urban-infra-series
+```
 
-## Module 3: Urban Waste‑Water Network Analysis with GNNs
-### 1. Topic Content
-**Objective**: Use GNNs on a sewer network graph to predict flow overloads and detect blockages.
-### 2. Key Concepts:
-- Graph (nodes = manholes, treatment plants; edges = sewer pipes)
-- Dynamic features (inflow, outflow, rainfall input)
-- GNN tasks: sequence modeling (spatio‑temporal GNN), anomaly detection
-### 3. Use Cases:
-- Predicting surcharge under heavy rainfall
-- Identifying likely blockage locations
-- Optimizing cleaning routes
+### Create virtual environment (optional)
+```bash
+conda create -n gnninfra python=3.10
+conda activate gnninfra
+```
+
+### Install required libraries
+```bash
+pip install -r requirements.txt
+```
+Libraries used include: *torch, torch-geometric, networkx, geopandas, matplotlib*.
+## 🔍 How to Use
+Each module includes:
+- 📓 A Jupyter notebook
+- 📄 A markdown documentation file with method, data, and workflow explanation
+
+You can start from Module 01 and progress linearly, or jump to a topic of interest.
+## 🧠 For Researchers & Planners
+Ideal for:
+- Urban AI & data science coursework
+- Research projects on smart cities
+- Municipal analytics teams
+## 📬 Feedback & Contribution
+We welcome feedback and contributions! Please open an issue or submit a pull request.
+## 📜 License
+This learning series is released under the MIT License.
+
+### Built and maintained with ❤️ by [Ngoc Thien Le, PhD / Data Science for Urban Infrastructure (DS4UI)].
