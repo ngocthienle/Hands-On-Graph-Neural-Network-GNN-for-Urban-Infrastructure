@@ -11,7 +11,7 @@ Welcome to the Graph Neural Networks (GNNs) for Urban Infrastructure Analysis se
 ## 📚 Module Index
  Module      | Title       | Description|
 | ----------- | ----------- |------------|
-| 01    | GNN for Urban Road Network Analysis  |Build and analyze road graphs to predict congestion and connectivity
+|01| GNN for Urban Road Network Analysis |Build and analyze road graphs to predict congestion and connectivity
 |02|GNN for Urban Water Supply Systems|Model hydraulic flow and pressure anomalies in water systems
 |03|GNN for Wastewater Networks|Detect blockages and flow issues in drainage systems
 |04|Building and Training a GNN|Learn how to construct, train, and evaluate GNNs
